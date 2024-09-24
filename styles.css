@@ -1,0 +1,161 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 35px;
+  transition: 0.5s;
+}
+
+.nav a:hover {
+  color: #0ef;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10% 0;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.content h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s;
+}
+
+.social-icons a:hover {
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #0ef, 0 0 30px #0ef;
+}
+
+.img-box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ff2200, #0ef, #ff2200);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.img-box::after {
+  position: absolute;
+  content: "";
+  inset: 3px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.img-box img {
+  z-index: 1;
+  width: 430px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.type-text {
+  color: #0ef;
+  font-size: 40px;
+}
